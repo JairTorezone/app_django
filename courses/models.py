@@ -24,6 +24,8 @@ class Course(models.Model):
         blank=True,
         null=True)
 
+    description = models.TextField(verbose_name="Descrição", blank=True,null=True)
+
     created_at = models.DateTimeField(auto_now_add=True, verbose_name="Data de criação")
     updated_at = models.DateTimeField(auto_now=True, verbose_name="Data de Edição")
 
